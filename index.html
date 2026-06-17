@@ -2,241 +2,299 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Mendrika Rakotomanga</title>
 
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="cursor-glow"></div>
 
-        <header>
+    <header class="hero">
 
-            <h1>Mendrika Rakotomanga</h1>
+        <section class="hero-grid">
 
-            <p class="subtitle">
-                PhD Researcher in Machine Learning <br>
-                University of Leeds
-            </p>
+            <div class="hero-text reveal">
 
-            <div class="links">
+                <h1>
+                    Mendrika<br>
+                    Rakotomanga
+                </h1>
 
-                <a href="https://github.com/mendrika-mdg">GitHub</a>
+                <p class="eyebrow">Machine Learning · Satellite Data · Nowcasting</p>
 
-                <a href="https://pancast.io">PANCAST</a>
+                <p class="hero-summary">
+                    I am a PhD researcher in Machine Learning and Applied Mathematics at the University of Leeds.
+                    I develop and deploy machine learning systems based on satellite observations to improve
+                    convective storm prediction.
+                </p>
 
-                <a href="cv/mendrika_cv.pdf">CV</a>
+                <div class="hero-nav">
 
-                <a href="https://www.linkedin.com/in/mendrika-rakotomanga/">
-                    LinkedIn
-                </a>
+                    <a href="#publications">Publications</a>
+
+                    <a href="#pancast">Projects</a>
+
+                    <a href="#experience">Experience</a>
+
+                    <a href="#education">Education</a>
+
+                    <a href="#conferences">Talks</a>
+
+                    <a href="#skills">Skills</a>
+
+                    <a href="#contact">Contact</a>
+
+                    <a href="cv/mendrika_cv.pdf" target="_blank" rel="noopener noreferrer">
+                        CV ↗
+                    </a>
+
+                </div>
 
             </div>
 
-        </header>
-
-        <section>
-
-            <h2>About</h2>
-
-            <p>
-                I am a PhD researcher in Machine Learning at the University of Leeds,
-                working on deep learning methods for satellite-based convective storm
-                nowcasting across Africa.
-            </p>
-
-            <p>
-                My research focuses on object-based artificial intelligence approaches
-                for probabilistic nowcasting using geostationary satellite observations,
-                with a strong emphasis on operational forecasting, interpretability,
-                and early warning systems.
-            </p>
-
-            <p>
-                I am part of the NAIAR project (Nowcasting with AI of African Rainfall),
-                collaborating with the University of Leeds, UKCEH, NCAS,
-                and international forecasting partners.
-            </p>
+            <div class="hero-profile reveal">
+                <div class="profile-frame">
+                    <img src="images/Mendrika_profile.jpg" alt="Mendrika Rakotomanga">
+                </div>
+            </div>
 
         </section>
 
-        <section>
+    </header>
 
-            <h2>Research Interests</h2>
+    <main>
 
-            <ul>
+        <section class="section research-showcase reveal" id="research">
 
-                <li>Machine Learning for Weather and Climate</li>
+            <div class="research-text">
+                <p class="eyebrow">Research</p>
+                <h2>Object-based deep learning for storm nowcasting</h2>
 
-                <li>Convective Storm Nowcasting</li>
+                <p>
+                    I develop models that convert satellite-derived convective-core objects into probabilistic
+                    forecasts of storm occurrence. This allows the model to learn from storm structure, location,
+                    intensity, timing, and interaction between neighbouring convective systems.
+                </p>
 
-                <li>Deep Learning</li>
+                <div class="tag-list">
+                    <span>Convective storm nowcasting</span>
+                    <span>Satellite remote sensing</span>
+                    <span>Deep learning</span>
+                    <span>Interpretability</span>
+                    <span>Early warning systems</span>
+                </div>
+            </div>
 
-                <li>Satellite Remote Sensing</li>
-
-                <li>Artificial Intelligence for Early Warning Systems</li>
-
-                <li>AI for Africa</li>
-
-            </ul>
-
-        </section>
-
-        <section>
-
-            <h2>Featured Project — PANCAST</h2>
-
-            <p>
-                PANCAST is an operational AI-based probabilistic nowcasting system
-                designed to predict convective storm occurrence across Africa using
-                satellite observations and deep learning.
-            </p>
-
-            <p>
-                The framework combines object-based storm representations with
-                spatio-temporal deep learning architectures to generate real-time
-                probabilistic nowcasts of severe convection.
-            </p>
-
-            <p>
-                PANCAST is being operationalised in collaboration with UKCEH
-                and international partners to support forecasting and early
-                warning applications across Africa.
-            </p>
+            <div class="media-card">
+                <img src="images/ncast-animation.gif" alt="NCAST storm nowcasting animation">
+            </div>
 
         </section>
 
-        <section>
+        <section class="section pancast-section reveal" id="pancast">
 
-            <h2>Education</h2>
+            <div class="phone-card">
+                <img src="images/pancast-mobile.gif" alt="PANCAST mobile animation">
+            </div>
 
-            <ul>
+            <div class="pancast-text">
+                <p class="eyebrow">Featured Project</p>
+                <h2>PANCAST</h2>
 
-                <li>
-                    <strong>University of Leeds</strong><br>
-                    PhD in Machine Learning and Applied Mathematics<br>
-                    2023 – Present
-                </li>
+                <p>
+                    PANCAST is an operational AI-based probabilistic nowcasting system for convective storm
+                    occurrence across Africa. It combines satellite observations, object-based storm
+                    representations, and spatio-temporal deep learning to support real-time forecasting.
+                </p>
 
-                <li>
-                    <strong>Stellenbosch University & AIMS South Africa</strong><br>
-                    MSc in Mathematical Sciences<br>
-                    2021 – 2022
-                </li>
+                <p>
+                    The system is designed for operational forecasting and early warning applications across Africa.
+                </p>
 
-                <li>
-                    <strong>University of Antananarivo</strong><br>
-                    MSc in Physics and Chemistry
-                </li>
-
-            </ul>
+                <a href="https://pancast.io" target="_blank" rel="noopener noreferrer" class="btn primary">Visit pancast.io</a>
+            </div>
 
         </section>
 
-        <section>
+        <section class="section publication reveal" id="publications">
 
-            <h2>Experience</h2>
+            <p class="eyebrow">Publications</p>
+            <h2>Selected academic work</h2>
 
-            <ul>
+            <article class="publication-card">
+                <h3>Object-Based Deep Learning for Probabilistic Convective Core Nowcasting from Satellite Data</h3>
 
-                <li>
-                    <strong>Max Planck Institute for Intelligent Systems</strong><br>
-                    Data Science and Artificial Intelligence Research
-                </li>
+                <p>
+                    M. Rakotomanga, D. J. Parker, N. Ben Rached, S. R. Anderson,
+                    C. Klein, and S. C. Wells.
+                </p>
 
-                <li>
-                    <strong>University of Leeds</strong><br>
-                    Research in AI-based weather nowcasting and operational forecasting
-                </li>
-
-            </ul>
-
-        </section>
-
-        <section>
-
-            <h2>Selected Conferences and Talks</h2>
-
-            <ul>
-
-                <li>
-                    European Nowcasting and Weather Forecasting Conference (ENWFC)
-                </li>
-
-                <li>
-                    Royal Meteorological Society Annual Conference
-                </li>
-
-                <li>
-                    Deep Learning IndabaX Madagascar
-                </li>
-
-                <li>
-                    Alan Turing Institute PhD Connect
-                </li>
-
-            </ul>
+                <p>
+                    Under review in <em>Quarterly Journal of the Royal Meteorological Society</em>.
+                </p>
+            </article>
 
         </section>
 
-        <section>
+        <section class="section timeline reveal" id="experience">
 
-            <h2>Awards and Recognition</h2>
+            <p class="eyebrow">Experience</p>
+            <h2>Research and professional experience</h2>
 
-            <ul>
+            <div class="timeline-list">
 
-                <li>
-                    Highly Commended — EPS Leeds Partnership Awards 2026
-                </li>
+                <div>
+                    <span>2023–present</span>
+                    <p>PhD Researcher in Machine Learning and Applied Mathematics, University of Leeds.</p>
+                </div>
 
-                <li>
-                    Mastercard Foundation Scholar
-                </li>
+                <div>
+                    <span>2025</span>
+                    <p>NC-International Visiting Scientist, UK Centre for Ecology and Hydrology.</p>
+                </div>
 
-                <li>
-                    Research and AI collaborations across Africa and Europe
-                </li>
+                <div>
+                    <span>2023</span>
+                    <p>Data Science and AI Fellow, Max Planck Institute for Intelligent Systems and University of Tübingen.</p>
+                </div>
 
-            </ul>
-
-        </section>
-
-        <section>
-
-            <h2>Contact</h2>
-
-            <p>
-                Email: mmmhr@leeds.ac.uk
-            </p>
-
-            <p>
-                LinkedIn:
-                <a href="https://www.linkedin.com/in/mendrika-rakotomanga/">
-                    mendrika-rakotomanga
-                </a>
-            </p>
-
-            <p>
-                GitHub:
-                <a href="https://github.com/mendrika-mdg">
-                    github.com/mendrika-mdg
-                </a>
-            </p>
+            </div>
 
         </section>
 
-    </div>
+        <section class="section timeline reveal" id="education">
+
+            <p class="eyebrow">Education</p>
+            <h2>Academic background</h2>
+
+            <div class="timeline-list">
+
+                <div>
+                    <span>2021–2022</span>
+                    <p>MSc in Mathematical Sciences, AIMS South Africa and Stellenbosch University, Cum Laude.</p>
+                </div>
+
+                <div>
+                    <span>2017–2020</span>
+                    <p>Master’s in Physics and Chemistry, Ecole Normale Supérieure and University of Antananarivo, Magna Cum Laude.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section awards reveal" id="conferences">
+
+            <p class="eyebrow">Conferences</p>
+            <h2>Selected talks and conferences</h2>
+
+            <div class="card-grid">
+
+                <article class="mini-card">
+                    <h3>ENWFC 2026</h3>
+                    <p>Oral presentation on deep learning methods for convective storm nowcasting.</p>
+                </article>
+
+                <article class="mini-card">
+                    <h3>RMetS Annual Conference 2026</h3>
+                    <p>Oral presentation on object-based deep learning for convective storm nowcasting.</p>
+                </article>
+
+                <article class="mini-card">
+                    <h3>WMO AI Webinar</h3>
+                    <p>Shared work related to AI applications for weather forecasting and nowcasting.</p>
+                </article>
+
+                <article class="mini-card">
+                    <h3>IndabaX Madagascar</h3>
+                    <p>Keynote and outreach activities on AI-driven nowcasting for African weather challenges.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="section two-column reveal" id="skills">
+
+            <div class="glass-card">
+                <h2>Technical Skills</h2>
+
+                <div class="tag-list">
+                    <span>Python</span>
+                    <span>PyTorch</span>
+                    <span>TensorFlow</span>
+                    <span>scikit-learn</span>
+                    <span>Distributed ML</span>
+                    <span>SLURM</span>
+                    <span>HTCondor</span>
+                    <span>ReactJS</span>
+                    <span>NodeJS</span>
+                    <span>PostgreSQL</span>
+                    <span>MongoDB</span>
+                    <span>LaTeX</span>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <h2>Languages</h2>
+
+                <p>Fluent in English, French, and Malagasy.</p>
+                <p>Limited proficiency in German.</p>
+            </div>
+
+        </section>
+
+        <section class="section awards reveal" id="awards">
+
+            <p class="eyebrow">Recognition</p>
+            <h2>Awards and selected activities</h2>
+
+            <div class="card-grid">
+
+                <article class="mini-card">
+                    <h3>EPS Leeds Partnership Awards</h3>
+                    <p>Highly Commended, Community Impact and Innovation, 2026.</p>
+                </article>
+
+                <article class="mini-card">
+                    <h3>AIMS–Tübingen Fellowship</h3>
+                    <p>Fellowship Programme in Data Science and Artificial Intelligence, 2023.</p>
+                </article>
+
+                <article class="mini-card">
+                    <h3>Mastercard Foundation Scholar</h3>
+                    <p>Full scholarship for MSc studies at AIMS South Africa and Stellenbosch University.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="section contact reveal" id="contact">
+
+            <p class="eyebrow">Contact</p>
+
+            <div class="contact-links">
+                <a href="mailto:mmmhr@leeds.ac.uk">Email</a>
+                <a href="https://github.com/mendrika-mdg" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/mendrika-rakotomanga/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="cv/mendrika_cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+                <a href="https://pancast.io" target="_blank" rel="noopener noreferrer">PANCAST</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
 
 </body>
 
